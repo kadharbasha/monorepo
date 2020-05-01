@@ -20,7 +20,7 @@ pipeline {
                         dir ("services/dir1") {
                         sh " ls"
                         }
-
+                        }
                         script {
                         dir ("services/dir1") {
                         sh " ls"
@@ -54,6 +54,7 @@ pipeline {
                         dir ("services/dir2") {
                         sh " ls"
                         }
+                        }
                         script {
                         dir ("services/dir2") {
                         sh " ls"
@@ -86,6 +87,7 @@ pipeline {
                         script {
                         dir ("services/dir3") {
                         sh " ls"
+                        }
                         }
                         script {
                         dir ("services/dir3") {
