@@ -38,7 +38,7 @@ pipeline {
                     }
                     steps {
                         dir ("services/dir1") {
-                        sh "docker build -f build/dockerfile"
+                        sh "docker build -f build/dockerfile ."
                         }
                     }
                 }
@@ -72,7 +72,7 @@ pipeline {
                     }
                     steps {
                         dir ("services/dir2") {
-                        sh "docker build -f build/dockerfile"
+                        sh "docker build -f build/dockerfile ."
                         }
                     }
                 }
@@ -106,7 +106,7 @@ pipeline {
                     }
                     steps {
                         dir ("services/dir3") {
-                        sh "docker build -f build/dockerfile"
+                        sh "docker build -f build/dockerfile ."
                         }
                     }
                 }
