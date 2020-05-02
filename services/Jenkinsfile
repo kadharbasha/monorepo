@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
-
+def nameOfServices = ['timeseries-pi' ,'timeseriesboard' ,'timeseriescontextpi' ,'uom' ,'usermanagement' ,'usernotification' ,'usersettings' ,'websocket' ,'websocketv2' ,'wellmanager']
+def builds = [:]
 pipeline {
     options {
         buildDiscarder(logRotator(numToKeepStr: '5'))
